@@ -53,10 +53,7 @@ public class MainActivity extends AppCompatActivity {
         cityAdapter = new ArrayAdapter<>(this, R.layout.content, dataList);
         cityList.setAdapter(cityAdapter);
 
-//        dataList.remove(0);
-//        cityAdapter.notifyDataSetChanged();
-//
-//        City edmonton = new City("edmonton");
+
 
         // delete from list using a long click
         cityList.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
@@ -69,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // add to list by clicking the icon to the right
+        // add to list by clicking the icon on the right
         enter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

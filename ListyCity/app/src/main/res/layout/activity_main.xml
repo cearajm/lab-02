@@ -30,7 +30,15 @@
             android:src="@drawable/add_city"
             />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="(press and hold to delete)"
+            android:layout_below="@id/add"
+            android:paddingLeft="20dp"
+            />
     </RelativeLayout>
+
 
     <ListView
         android:id="@+id/city_list"
